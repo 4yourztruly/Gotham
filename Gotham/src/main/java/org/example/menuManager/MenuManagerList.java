@@ -1,14 +1,20 @@
 package org.example.menuManager;
 
+import org.example.menus.Menu;
+
+import java.util.ArrayList;
+
 public class MenuManagerList implements MenuManager{
+    private final ArrayList<Menu>menus = new ArrayList<Menu>();
     @Override
-    public void addMenu() {
+    public void addMenu(Menu menu) {
+        menus.add(menu);
 
     }
 
     @Override
-    public void getMenus() {
-
+    public ArrayList<Menu> getMenus() {
+        return menus;
     }
 
     @Override

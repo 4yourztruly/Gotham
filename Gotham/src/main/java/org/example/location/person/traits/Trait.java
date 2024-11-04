@@ -4,9 +4,9 @@ public class Trait {
     private final String name;
     private int level;
 
-    public Trait(String name, int level) {
+    public Trait(String name) {
         this.name = name;
-        this.level = level;
+        this.level = 1;
     }
 
     public String getName() {
